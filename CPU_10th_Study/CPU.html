@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            background-color: #d6dffb; 
+            font-family: 'Pretendard', sans-serif; 
+            /* flex를 사용해 프로필 카드를 화면 정중앙에 배치 */
+            display: flex;
+            justify-content: center; /* 가로 방향 중앙 정렬 */
+            align-items: center;    /* 세로 방향 중앙 정렬 */
+            height: 100vh;         
+            margin: 0;                 
+        }
+
+        .profile-card {
+            width: 550px;
+            background-color: white;
+            border-radius: 20px; 
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* 카드에 그림자 효과 */
+            padding: 40px;
+        }
+        .profile-header {
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 40px;
+        }
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* 이미지를 원형 */
+            margin-right: 30px; 
+        }
+        .profile-text {
+            text-align: left; 
+        }
+
+        .profile-text h1 {
+            margin: 0 0 8px 0; /*위, 왼쪽, 오른쪽 여백은 0, 아래쪽 여백 8 */
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .profile-text h5 {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+            font-weight: 400; 
+            color: #666; 
+        }
+        .location {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        .location img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px; /* 아이콘과 텍스트 사이 간격 */
+        }
+
+        .contact-btn {
+            background-color: #4aa3ff;
+            color: white;
+            border: none; /* 테두리 제거 */
+            padding: 10px 25px; /* 버튼 안쪽 여백 */
+            border-radius: 8px;
+            cursor: pointer; /* 마우스를 올리면 손가락 모양으로 변경 */
+            font-size: 16px;
+        }
+        .contact-btn:hover {
+            background-color: #2e8af7;
+        }
+        .profile-info {
+            text-align: left;
+            margin-bottom: 0;
+        }
+        .profile-info p {
+            display: flex; 
+            font-size: 16px;
+            margin: 0 0 12px 0;
+        }
+        
+        .profile-info strong {
+            font-weight: 600;
+            color: #000;
+            width: 110px;
+        }
+        .profile-info span {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <section class="profile-card">
+        <div class="profile-header">
+            <img src="profile.jpg" alt="profile picture">
+
+            <div class="profile-text">
+                <h1>정재희</h1>
+                <h5>뭘 할지 모르겠다 ㅜㅜ</h5>
+                <div class="location">
+                    <img src="hw.png" alt="location icon">
+                    <span>여수 봉계동</span>
+                </div>
+                <a href = "Test.html">
+                <button class="contact-btn">Contact</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <p><strong>Location</strong> <span>서울</span></p>
+            <p><strong>Age</strong> <span>2009년생</span></p>
+            <p><strong>Experience</strong> <span>신입</span></p>
+            <p><strong>School</strong> <span>미림마이스터고</span></p>
+        </div>
+    </section>
+</body>
+</html>
